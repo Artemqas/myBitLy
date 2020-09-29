@@ -1,0 +1,23 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = 'UTF-8'>
+  <title>Make a short link</title>
+  <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+  <form action="" method="post">
+      <p>
+  	    <label for="link_in"><br>Write the link: </br></label>
+  	    <input type="text" name="link_in" id="link_in" size="50">
+  	</p>
+  	<p>
+  	    <input type="submit">
+  	</p>
+  </form>
+{% if abc %}
+  <label for="link_out">Enjoy your link: </label>
+  <input type="text"  readonly="true" size="35" value="{{ abc }}">
+{% endif %}
+</body>
+</html>
